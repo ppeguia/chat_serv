@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Our Company</title>
+  <link rel="stylesheet" href="">
+</head>
+
+<body>
+  <style>
+    #cont_message {
+      width: 50%;
+      background: cornflowerblue;
+      border: solid 2px midnightblue;
+    }
+    #send_message {
+      display: flex; justify-content: start; align-items: center; padding: 5px;
+    }
+    textarea{
+      width: 250px;
+    }
+    p {
+      background: white;
+      padding: 5px;
+      border: solid 1px black;
+      margin: 10px;
+      border-radius: 5px;
+    }
+    button{
+      height: 100%;
+      background: darkblue;
+      color: white;
+      padding: 10px;
+    }
+
+  </style>
+  <h3>Ingresar</h3>
+  <form id="login" accept-charset="utf-8">
+    <input type="text" name="" id="correo" placeholder="Correo" value="">
+    <input type="text" name="" id="usuario" placeholder="Usuario" value="">
+    <input type="button" name="" value="entrar" onclick="logear();">
+  </form>
+  <hr>
+  <div id="cont_message"></div>
+  <div id="send_message">
+    <textarea id="message" placeholder="mensaje"></textarea>
+    <input type="text" name="" id="target" placeholder="Destinatario" value="">
+    <button id="enviar" onclick="send();">Enviar</button>
+  </div>
+  <h1>socket.io cliente</h1>
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="socket.io/socket.io.js"></script>
+  <script src="socket_funtiones.js"></script>
+  <script src="funtiones.js"></script>
+</body>
+
+</html>
